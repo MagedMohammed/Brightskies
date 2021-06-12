@@ -98,6 +98,9 @@
                                                     <constraint firstAttribute="width" constant="20" id="rpQ-JJ-5LQ"/>
                                                 </constraints>
                                                 <state key="normal" image="share"/>
+                                                <connections>
+                                                    <action selector="shareButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zzH-0H-dJG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -114,6 +117,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="recipeCalLabel" destination="0gL-9S-SP2" id="19j-ZB-NzK"/>
+                <outlet property="recipesFavLabel" destination="IZa-No-HGE" id="KpO-8o-hHE"/>
+                <outlet property="recipesImage" destination="tZO-N0-9Yz" id="t2c-2T-tfP"/>
+                <outlet property="recipesRateLabel" destination="X1o-DO-eee" id="8Q9-3k-BUK"/>
+                <outlet property="recipesTimeLabel" destination="g1g-Xx-sPG" id="ZQc-BN-LIA"/>
+                <outlet property="recipesTitleLabel" destination="17B-pl-Z2c" id="M2R-Ya-mfc"/>
+            </connections>
             <point key="canvasLocation" x="35.507246376811594" y="101.78571428571428"/>
         </tableViewCell>
     </objects>
