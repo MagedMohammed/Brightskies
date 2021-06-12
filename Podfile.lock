@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.4.1)
+  - IBAnimatable (6.1.0)
   - IQKeyboardManagerSwift (6.5.6)
   - NVActivityIndicatorView (4.4.1):
     - NVActivityIndicatorView/Presenter (= 4.4.1)
@@ -22,6 +23,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - IBAnimatable
   - IQKeyboardManagerSwift
   - NVActivityIndicatorView (~> 4.4.0)
   - PINRemoteImage
@@ -29,6 +31,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - IBAnimatable
     - IQKeyboardManagerSwift
     - NVActivityIndicatorView
     - PINCache
@@ -37,12 +40,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
   PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
 
-PODFILE CHECKSUM: 991d1353e0962c863e39691a3a64af73e11dbe12
+PODFILE CHECKSUM: a657b4c1a920ea6e6affd4a18caf0aa535ddd51c
 
 COCOAPODS: 1.10.1

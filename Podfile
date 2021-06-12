@@ -11,7 +11,8 @@ target 'BrightskiesTest' do
   pod 'IQKeyboardManagerSwift'
   pod 'NVActivityIndicatorView' , '~> 4.4.0'
   pod 'PINRemoteImage'
-
+  pod 'IBAnimatable'
+  
   target 'BrightskiesTestTests' do
     inherit! :search_paths
     # Pods for testing

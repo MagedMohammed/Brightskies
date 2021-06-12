@@ -15,7 +15,7 @@ extension UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationBar.tintColor = .black
+        self.navigationController?.navigationBar.tintColor = UIColor(named: "lightBlue")
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(named: "lightBlue")]
     }
 }

@@ -41,7 +41,7 @@ class ListOfRecipesViewController: UIViewController, NVActivityIndicatorViewable
     
     //    MARK:- Action
     
-//    MARK:- Navigation
+    //    MARK:- Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "recipeDetails" {
             if let destination = segue.destination as? DetailOfARecipeViewController {
@@ -51,8 +51,8 @@ class ListOfRecipesViewController: UIViewController, NVActivityIndicatorViewable
             }
         }
     }
-    
 }
+
 extension ListOfRecipesViewController: ListOfRecipesViewProtocol,ErrorFeedBack{
     
     func startIndcator() {

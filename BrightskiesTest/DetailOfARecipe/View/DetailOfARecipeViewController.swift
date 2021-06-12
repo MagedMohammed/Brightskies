@@ -10,15 +10,35 @@ import UIKit
 class DetailOfARecipeViewController: UIViewController {
 
     //    MARK:- Outlet
+    @IBOutlet weak var recipeImage: UIImageView!
+    
+    @IBOutlet weak var recipeTitleLabel: UILabel!
+    @IBOutlet weak var recipeRateLabel: UILabel!
+    @IBOutlet weak var recipeTimeLabel: UILabel!
+    
+    @IBOutlet weak var recipeIngredientsLabel: UILabel!
+    
+    @IBOutlet weak var recipeDifficultyLabel: UILabel!
+    
+    
+    
     //    MARK:- Properties
     var recipeDetails = RecipesResponseModelElement()
     //    MARK:- ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.setColorOfNav()
+        self.setview(data: self.recipeDetails)
     }
     //    MARK:- Method
-    
+    func setview(data:RecipesResponseModelElement){
+        let imageURL = URL(string:data.image ?? "")
+        self.recipeImage.pin_setImage(from: imageURL)
+        self.recipeTitleLabel.text = data.name
+        self.recipeTimeLabel.text = data.time ?? ""
+        self.recipeRateLabel.text = String(data.ratings ?? 0)
+        self.recipeIngredientsLabel.text = "\(data.ingredients?.count ?? 0) Ingredients"
+    }
     //    MARK:- Action
 
 }
