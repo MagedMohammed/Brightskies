@@ -11,6 +11,7 @@ class DetailOfARecipeViewController: UIViewController {
 
     //    MARK:- Outlet
     //    MARK:- Properties
+    var recipeDetails = RecipesResponseModelElement()
     //    MARK:- ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()

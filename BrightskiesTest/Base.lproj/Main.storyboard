@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KlJ-cE-JFy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rX9-pG-V1P">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -144,6 +144,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T2b-NY-VI5">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="9tp-dT-cQs">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
                                 <connections>
                                     <outlet property="dataSource" destination="9aO-h6-EUS" id="dZh-W1-1CE"/>
                                     <outlet property="delegate" destination="9aO-h6-EUS" id="2d6-5M-poJ"/>
@@ -161,7 +166,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Q5x-sb-6v2"/>
                     <connections>
-                        <segue destination="sHh-u4-k2y" kind="show" id="IbI-Vr-zjK"/>
+                        <outlet property="recipesTableView" destination="T2b-NY-VI5" id="XXl-i7-cfG"/>
+                        <segue destination="sHh-u4-k2y" kind="show" identifier="recipeDetails" id="IbI-Vr-zjK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2c-ga-13o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
