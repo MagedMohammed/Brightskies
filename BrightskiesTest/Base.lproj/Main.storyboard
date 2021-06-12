@@ -86,6 +86,9 @@
                                                         <state key="normal" title="Button">
                                                             <color key="titleColor" red="0.93333333330000001" green="0.93725490199999995" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DmC-ia-9aj"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -118,6 +121,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Atz-pt-LQD"/>
+                    <connections>
+                        <outlet property="emailErrorLabel" destination="cUJ-eJ-eOL" id="cd7-AR-28f"/>
+                        <outlet property="emailTextfield" destination="ajI-N0-AyD" id="yJ4-AA-5Pl"/>
+                        <outlet property="loginButton" destination="rXn-sU-HKC" id="rjU-L2-aoj"/>
+                        <outlet property="passwordErrorLabel" destination="dBy-1I-ewf" id="jPL-m1-9pR"/>
+                        <outlet property="passwordTextfield" destination="u8A-n1-3Ih" id="28b-u3-bpo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,17 +136,21 @@
         <!--List Of Recipes View Controller-->
         <scene sceneID="VOW-TS-ViX">
             <objects>
-                <viewController id="9aO-h6-EUS" customClass="ListOfRecipesViewController" customModule="BrightskiesTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListOfRecipesViewController" id="9aO-h6-EUS" customClass="ListOfRecipesViewController" customModule="BrightskiesTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZAt-yv-3Al">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="PMg-JG-6bX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Q5x-sb-6v2"/>
+                    <connections>
+                        <segue destination="sHh-u4-k2y" kind="show" id="IbI-Vr-zjK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2c-ga-13o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1639.1304347826087" y="64.955357142857139"/>
+            <point key="canvasLocation" x="2351" y="65"/>
         </scene>
         <!--Detail OfA Recipe View Controller-->
         <scene sceneID="Y1a-A9-bzo">
@@ -148,10 +162,11 @@
                         <viewLayoutGuide key="safeArea" id="mXQ-8l-RsK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="r0I-ep-ujc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NXh-Hq-feT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2350.7246376811595" y="64.955357142857139"/>
+            <point key="canvasLocation" x="3260.8695652173915" y="64.955357142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SfY-X1-iAo">
@@ -170,6 +185,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HOG-aa-Q3c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="64.955357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fu0-dW-e7Q">
+            <objects>
+                <navigationController storyboardIdentifier="Home" automaticallyAdjustsScrollViewInsets="NO" id="rX9-pG-V1P" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X0o-NY-14c">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9aO-h6-EUS" kind="relationship" relationship="rootViewController" id="zcD-90-Q78"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ohr-2k-ceu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639.1304347826087" y="64.955357142857139"/>
         </scene>
     </scenes>
     <resources>

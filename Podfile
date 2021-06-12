@@ -7,7 +7,10 @@ target 'BrightskiesTest' do
 
   # Pods for BrightskiesTest
 
-pod 'Alamofire', '~> 5.2'
+  pod 'Alamofire', '~> 5.2'
+  pod 'IQKeyboardManagerSwift'
+  pod 'NVActivityIndicatorView' , '~> 4.4.0'
+  pod 'PINRemoteImage'
 
   target 'BrightskiesTestTests' do
     inherit! :search_paths
