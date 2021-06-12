@@ -3,18 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		283CEDA42674FE3800FAFB82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CEDA32674FE3800FAFB82 /* AppDelegate.swift */; };
-		283CEDA82674FE3800FAFB82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CEDA72674FE3800FAFB82 /* ViewController.swift */; };
+		283CEDA82674FE3800FAFB82 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CEDA72674FE3800FAFB82 /* LoginViewController.swift */; };
 		283CEDAB2674FE3800FAFB82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283CEDA92674FE3800FAFB82 /* Main.storyboard */; };
 		283CEDAE2674FE3800FAFB82 /* BrightskiesTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 283CEDAC2674FE3800FAFB82 /* BrightskiesTest.xcdatamodeld */; };
 		283CEDB02674FE3A00FAFB82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283CEDAF2674FE3A00FAFB82 /* Assets.xcassets */; };
 		283CEDB32674FE3A00FAFB82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283CEDB12674FE3A00FAFB82 /* LaunchScreen.storyboard */; };
 		283CEDBE2674FE3A00FAFB82 /* BrightskiesTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CEDBD2674FE3A00FAFB82 /* BrightskiesTestTests.swift */; };
 		283CEDC92674FE3A00FAFB82 /* BrightskiesTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CEDC82674FE3A00FAFB82 /* BrightskiesTestUITests.swift */; };
+		283CEDE32675031400FAFB82 /* ListOfRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CEDE22675031400FAFB82 /* ListOfRecipesViewController.swift */; };
+		283CEDE52675032500FAFB82 /* DetailOfARecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283CEDE42675032500FAFB82 /* DetailOfARecipeViewController.swift */; };
 		60F63AF016257A7CE9BFA686 /* Pods_BrightskiesTest_BrightskiesTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F240EEC93FFD9414A3DD8B4 /* Pods_BrightskiesTest_BrightskiesTestUITests.framework */; };
 		80D40372CA00CBBA5B3A3A23 /* Pods_BrightskiesTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E95D2CC1D8EC296B5E4AA43F /* Pods_BrightskiesTest.framework */; };
 		AE87EE5A1CB75DAAA3B26CB1 /* Pods_BrightskiesTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A5A1E5A9E55E8A63112566 /* Pods_BrightskiesTestTests.framework */; };
@@ -41,7 +43,7 @@
 		00A5A1E5A9E55E8A63112566 /* Pods_BrightskiesTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrightskiesTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		283CEDA02674FE3700FAFB82 /* BrightskiesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrightskiesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		283CEDA32674FE3800FAFB82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		283CEDA72674FE3800FAFB82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		283CEDA72674FE3800FAFB82 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		283CEDAA2674FE3800FAFB82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		283CEDAD2674FE3800FAFB82 /* BrightskiesTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrightskiesTest.xcdatamodel; sourceTree = "<group>"; };
 		283CEDAF2674FE3A00FAFB82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		283CEDC42674FE3A00FAFB82 /* BrightskiesTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightskiesTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		283CEDC82674FE3A00FAFB82 /* BrightskiesTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightskiesTestUITests.swift; sourceTree = "<group>"; };
 		283CEDCA2674FE3A00FAFB82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		283CEDE22675031400FAFB82 /* ListOfRecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfRecipesViewController.swift; sourceTree = "<group>"; };
+		283CEDE42675032500FAFB82 /* DetailOfARecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOfARecipeViewController.swift; sourceTree = "<group>"; };
 		3F240EEC93FFD9414A3DD8B4 /* Pods_BrightskiesTest_BrightskiesTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrightskiesTest_BrightskiesTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45794E52AFC3760F121EF9BB /* Pods-BrightskiesTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightskiesTestTests.release.xcconfig"; path = "Target Support Files/Pods-BrightskiesTestTests/Pods-BrightskiesTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		5E43B71589C8A6FE0CF2517F /* Pods-BrightskiesTest-BrightskiesTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightskiesTest-BrightskiesTestUITests.release.xcconfig"; path = "Target Support Files/Pods-BrightskiesTest-BrightskiesTestUITests/Pods-BrightskiesTest-BrightskiesTestUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,8 +120,10 @@
 		283CEDA22674FE3800FAFB82 /* BrightskiesTest */ = {
 			isa = PBXGroup;
 			children = (
+				283CEDDE2675029900FAFB82 /* DetailOfARecipe */,
+				283CEDDA2675025C00FAFB82 /* ListOfRecipes */,
 				283CEDA32674FE3800FAFB82 /* AppDelegate.swift */,
-				283CEDA72674FE3800FAFB82 /* ViewController.swift */,
+				283CEDD62675020C00FAFB82 /* Login */,
 				283CEDA92674FE3800FAFB82 /* Main.storyboard */,
 				283CEDAF2674FE3A00FAFB82 /* Assets.xcassets */,
 				283CEDB12674FE3A00FAFB82 /* LaunchScreen.storyboard */,
@@ -145,6 +151,102 @@
 			path = BrightskiesTestUITests;
 			sourceTree = "<group>";
 		};
+		283CEDD62675020C00FAFB82 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				283CEDD92675022B00FAFB82 /* Presenter */,
+				283CEDD82675022500FAFB82 /* Model */,
+				283CEDD72675021D00FAFB82 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		283CEDD72675021D00FAFB82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				283CEDA72674FE3800FAFB82 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		283CEDD82675022500FAFB82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		283CEDD92675022B00FAFB82 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		283CEDDA2675025C00FAFB82 /* ListOfRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				283CEDDD2675028F00FAFB82 /* Presenter */,
+				283CEDDC2675028900FAFB82 /* View */,
+				283CEDDB2675028000FAFB82 /* Model */,
+			);
+			path = ListOfRecipes;
+			sourceTree = "<group>";
+		};
+		283CEDDB2675028000FAFB82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		283CEDDC2675028900FAFB82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				283CEDE22675031400FAFB82 /* ListOfRecipesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		283CEDDD2675028F00FAFB82 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		283CEDDE2675029900FAFB82 /* DetailOfARecipe */ = {
+			isa = PBXGroup;
+			children = (
+				283CEDE1267502CA00FAFB82 /* Presenter */,
+				283CEDE0267502C300FAFB82 /* View */,
+				283CEDDF267502BD00FAFB82 /* Model */,
+			);
+			path = DetailOfARecipe;
+			sourceTree = "<group>";
+		};
+		283CEDDF267502BD00FAFB82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		283CEDE0267502C300FAFB82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				283CEDE42675032500FAFB82 /* DetailOfARecipeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		283CEDE1267502CA00FAFB82 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		3522F10884E2778BEC37A784 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +267,6 @@
 				8C06E2B9C39FC381A3145450 /* Pods-BrightskiesTestTests.debug.xcconfig */,
 				45794E52AFC3760F121EF9BB /* Pods-BrightskiesTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,7 +508,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				283CEDA82674FE3800FAFB82 /* ViewController.swift in Sources */,
+				283CEDA82674FE3800FAFB82 /* LoginViewController.swift in Sources */,
+				283CEDE52675032500FAFB82 /* DetailOfARecipeViewController.swift in Sources */,
+				283CEDE32675031400FAFB82 /* ListOfRecipesViewController.swift in Sources */,
 				283CEDA42674FE3800FAFB82 /* AppDelegate.swift in Sources */,
 				283CEDAE2674FE3800FAFB82 /* BrightskiesTest.xcdatamodeld in Sources */,
 			);
