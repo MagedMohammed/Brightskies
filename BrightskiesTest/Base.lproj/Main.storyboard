@@ -140,8 +140,24 @@
                     <view key="view" contentMode="scaleToFill" id="ZAt-yv-3Al">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T2b-NY-VI5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9aO-h6-EUS" id="dZh-W1-1CE"/>
+                                    <outlet property="delegate" destination="9aO-h6-EUS" id="2d6-5M-poJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PMg-JG-6bX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PMg-JG-6bX" firstAttribute="trailing" secondItem="T2b-NY-VI5" secondAttribute="trailing" id="CYi-0f-wmN"/>
+                            <constraint firstItem="T2b-NY-VI5" firstAttribute="top" secondItem="PMg-JG-6bX" secondAttribute="top" id="Msp-LI-WpU"/>
+                            <constraint firstItem="PMg-JG-6bX" firstAttribute="bottom" secondItem="T2b-NY-VI5" secondAttribute="bottom" id="fdQ-K7-xlw"/>
+                            <constraint firstItem="T2b-NY-VI5" firstAttribute="leading" secondItem="PMg-JG-6bX" secondAttribute="leading" id="uwF-bC-wkL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Q5x-sb-6v2"/>
                     <connections>
