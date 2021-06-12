@@ -9,31 +9,30 @@ import UIKit
 import PINRemoteImage
 
 class RecipesTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var recipesImage: UIImageView!
-
+    
+    //    MARK:- Outlet
+    @IBOutlet weak var recipesImage: UIImageView!{
+        didSet{
+            recipesImage.layer.cornerRadius = 12
+            recipesImage.layer.masksToBounds = true
+        }
+    }
     @IBOutlet weak var recipesTitleLabel: UILabel!
-    
     @IBOutlet weak var recipesTimeLabel: UILabel!
-    
     @IBOutlet weak var recipeCalLabel: UILabel!
-    
     @IBOutlet weak var recipesRateLabel: UILabel!
-    
     @IBOutlet weak var recipesFavLabel: UILabel!
     
+    //    MARK:- Properties
+    var share:(()->())?
     
-//    MARK:- ViewLifeCycle
+    //    MARK:- ViewLifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    
+    //    MARK:- Method
     func setCell(data:RecipesResponseModelElement){
         let imageURL = URL(string:data.image ?? "")
         self.recipesImage.pin_setImage(from: imageURL)
@@ -44,13 +43,8 @@ class RecipesTableViewCell: UITableViewCell {
         self.recipesFavLabel.text = String(data.favorites ?? 0)
     }
     
-    
-    
-//    MARK:- Action
-    
+    //    MARK:- Action
     @IBAction func shareButtonTapped(_ sender: UIButton) {
-        
+        self.share?()
     }
-    
-    
 }
