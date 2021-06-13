@@ -24,10 +24,10 @@ class ListOfRecipesViewController: UIViewController, NVActivityIndicatorViewable
     //    MARK:- Properties
     private var recipesData = [RecipesResponseModelElement]()
     private var presenter : ListOfRecipesPresenterProtocol!
+    
     //    MARK:- ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "List Of Recipes"
         self.setColorOfNav()
         self.presenter = ListOfRecipesPresenter(view: self)
         self.recipesTableView.delegate = self
@@ -36,10 +36,6 @@ class ListOfRecipesViewController: UIViewController, NVActivityIndicatorViewable
         self.presenter.getListOfRecipes()
         
     }
-    
-    //    MARK:- Method
-    
-    //    MARK:- Action
     
     //    MARK:- Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -60,8 +56,10 @@ extension ListOfRecipesViewController: ListOfRecipesViewProtocol,ErrorFeedBack{
     }
     
     func recipesData(_ data: [RecipesResponseModelElement]) {
-        self.recipesData = data
-        self.recipesTableView.reloadData()
+        DispatchQueue.main.async {
+            self.recipesData = data
+            self.recipesTableView.reloadData()
+        }
     }
     
     func stopIndcator() {
