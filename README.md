@@ -19,8 +19,8 @@
 - PINRemoteImage
 
 ### Unit Test 
-Write test for All _Email And Password_ Validation requirement
-write test code for API Service
+- Write test for All _Email And Password_ Validation requirement
+- write test code for API Service
 
 
 ### Thank You And Good Luck
