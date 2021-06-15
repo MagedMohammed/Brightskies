@@ -13,7 +13,7 @@
 
 ### Third Party Libs
 
-- AlmoFire
+- AlamoFire
 - IQKeyboardManagerSwift
 - NVActivityIndicatorView
 - PINRemoteImage
